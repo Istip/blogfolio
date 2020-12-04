@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/blogfolio/static/css/main.61052cab.chunk.css",
+    "main.css": "/blogfolio/static/css/main.a504dc3f.chunk.css",
     "main.js": "/blogfolio/static/js/main.e0debf45.chunk.js",
     "main.js.map": "/blogfolio/static/js/main.e0debf45.chunk.js.map",
     "runtime-main.js": "/blogfolio/static/js/runtime-main.9a56c333.js",
@@ -10,7 +10,7 @@
     "static/js/2.ed6ccec4.chunk.js.map": "/blogfolio/static/js/2.ed6ccec4.chunk.js.map",
     "index.html": "/blogfolio/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/blogfolio/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.61052cab.chunk.css.map": "/blogfolio/static/css/main.61052cab.chunk.css.map",
+    "static/css/main.a504dc3f.chunk.css.map": "/blogfolio/static/css/main.a504dc3f.chunk.css.map",
     "static/js/2.ed6ccec4.chunk.js.LICENSE.txt": "/blogfolio/static/js/2.ed6ccec4.chunk.js.LICENSE.txt",
     "static/media/p1big.9458a82b.png": "/blogfolio/static/media/p1big.9458a82b.png",
     "static/media/p2big.a56afe07.png": "/blogfolio/static/media/p2big.a56afe07.png",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.9a56c333.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.ed6ccec4.chunk.js",
-    "static/css/main.61052cab.chunk.css",
+    "static/css/main.a504dc3f.chunk.css",
     "static/js/main.e0debf45.chunk.js"
   ]
 }

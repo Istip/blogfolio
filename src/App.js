@@ -14,6 +14,14 @@ import Portfolio from "./components/Portfolio"
 
 function App() {
   const [winWidth, setWinWidth] = useState(window.innerWidth)
+  const [offsetY, setOffsetY] = useState(0)
+  const handleScroll = () => setOffsetY(window.pageYOffset)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   useEffect(() => {
     Aos.init({ duration: 1500 })
@@ -32,19 +40,39 @@ function App() {
       {winWidth < 576 ? (
         <>
           <NavbarMenu />
-          <Hero />
+          <div
+            style={{
+              transform: `translateY(${offsetY * 0.1}px)`,
+              zIndex: "10",
+            }}
+          >
+            <Hero />
+          </div>
         </>
       ) : (
         <>
-          <Hero />
+          <div
+            style={{
+              transform: `translateY(${offsetY * 0.1}px)`,
+              zIndex: "10",
+            }}
+          >
+            <Hero />
+          </div>
           <NavbarMenu />
         </>
       )}
       {/*  */}
-      <div data-aos='fade-in'>
+      <div
+        data-aos='fade-in'
+        style={{ transform: `translateY(-${offsetY * 0.05}px)` }}
+      >
         <Cards />
       </div>
-      <div data-aos='fade-up'>
+      <div
+        data-aos='fade-up'
+        style={{ transform: `translateY(${offsetY * 0.05}px)` }}
+      >
         <Accordion />
       </div>
       <div data-aos='fade-up' id='portfolio'>
